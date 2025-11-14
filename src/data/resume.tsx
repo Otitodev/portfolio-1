@@ -4,9 +4,9 @@ import { HomeIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Otito Ogene",
   initials: "OO",
-  url: "https://github.com/otitodrichukwu", // Update with your portfolio website if you have one
-  location: "İstanbul, Turkey",
-  locationLink: "https://www.google.com/maps/place/istanbul",
+  url: "https://github.com/otitodev", // Update with your portfolio website if you have one
+  location: "Lagos, Nigeria",
+  locationLink: "https://www.google.com/maps/place/lagos",
   description:
     "Backend Engineer | Python Developer. Building scalable systems with FastAPI, Django, and AWS.",
   summary:
@@ -35,11 +35,11 @@ export const DATA = {
   ],
   contact: {
     email: "otitodrichukwu@gmail.com",
-    tel: "+9036675598",
+    tel: "+90366755978",
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://github.com/otitodrichukwu",
+        url: "https://github.com/otitodev",
         icon: Icons.github,
         navbar: true,
       },
@@ -51,7 +51,7 @@ export const DATA = {
       },
       X: {
         name: "X",
-        url: "https://x.com/otitoogene", // Update with your actual X/Twitter handle
+        url: "https://x.com/Paynell1", // Update with your actual X/Twitter handle
         icon: Icons.x,
         navbar: true,
       },
@@ -143,7 +143,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/otitodrichukwu/triage-ai",
+          href: "https://github.com/otitodev/triage-ai",
           icon: <Icons.github className="size-3" />,
         },
       ],
@@ -168,7 +168,7 @@ export const DATA = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/otitodrichukwu/autolab",
+          href: "https://github.com/otitodev/autolab",
           icon: <Icons.github className="size-3" />,
         },
       ],
