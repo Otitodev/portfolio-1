@@ -1,0 +1,216 @@
+---
+title: "Setting Up n8n on AWS EC2 with Docker: A Step-by-Step Guide"
+publishedAt: "2025-11-21"
+summary: "Learn how to deploy your own n8n automation instance on AWS EC2 using Docker. Perfect for building powerful workflows without vendor lock-in."
+image: "/blog/n8n-aws-featured.png"
+---
+
+So you want to run your own n8n instance? Smart move. Whether you're tired of paying for Zapier or just want full control over your automation workflows, hosting n8n on AWS EC2 is a solid choice. Let me walk you through it.
+
+## Why n8n on EC2?
+
+Before we dive in, here's why this setup rocks:
+- **Full control** - Your data, your rules
+- **Cost-effective** - EC2 free tier gets you started for free
+- **Scalable** - Upgrade your instance as you grow
+- **Docker makes it easy** - No dependency hell
+
+## What You'll Need
+
+- An AWS account (obviously)
+- Basic terminal skills
+- About 20 minutes
+- A cup of coffee ☕
+
+## Step 1: Launch Your EC2 Instance
+
+Head over to the AWS Console and launch a new EC2 instance. Here's what I recommend:
+
+**Instance Type:** t2.micro (free tier eligible) or t2.small if you're running heavy workflows
+
+**AMI:** Ubuntu Server 22.04 LTS
+
+**Storage:** 20GB should be plenty to start
+
+**Security Group:** This is important! Open these ports:
+- Port 22 (SSH)
+- Port 5678 (n8n default port)
+- Port 443 (HTTPS - you'll thank me later)
+
+```bash
+# Your security group inbound rules should look like this:
+SSH      TCP  22    0.0.0.0/0
+Custom   TCP  5678  0.0.0.0/0
+HTTPS    TCP  443   0.0.0.0/0
+```
+
+## Step 2: Connect to Your Instance
+
+Once your instance is running, SSH into it:
+
+```bash
+ssh -i your-key.pem ubuntu@your-ec2-public-ip
+```
+
+First things first, update everything:
+
+```bash
+sudo apt update && sudo apt upgrade -y
+```
+
+## Step 3: Install Docker
+
+Docker makes this whole process painless. Here's the quick install:
+
+```bash
+# Install Docker
+curl -fsSL https://get.docker.com -o get-docker.sh
+sudo sh get-docker.sh
+
+# Add your user to the docker group (so you don't need sudo)
+sudo usermod -aG docker ubuntu
+
+# Log out and back in for this to take effect
+exit
+```
+
+SSH back in and verify Docker is working:
+
+```bash
+docker --version
+```
+
+## Step 4: Install Docker Compose
+
+We'll use Docker Compose to manage our n8n container:
+
+```bash
+sudo apt install docker-compose -y
+```
+
+## Step 5: Create Your n8n Setup
+
+Create a directory for n8n:
+
+```bash
+mkdir ~/n8n-docker
+cd ~/n8n-docker
+```
+
+Now create a `docker-compose.yml` file:
+
+```bash
+nano docker-compose.yml
+```
+
+Paste this configuration:
+
+```yaml
+version: '3.8'
+
+services:
+  n8n:
+    image: n8nio/n8n
+    restart: always
+    ports:
+      - "5678:5678"
+    environment:
+      - N8N_BASIC_AUTH_ACTIVE=true
+      - N8N_BASIC_AUTH_USER=admin
+      - N8N_BASIC_AUTH_PASSWORD=your-secure-password-here
+      - N8N_HOST=your-ec2-public-ip
+      - N8N_PORT=5678
+      - N8N_PROTOCOL=http
+      - WEBHOOK_URL=http://your-ec2-public-ip:5678/
+    volumes:
+      - ~/.n8n:/home/node/.n8n
+```
+
+**Important:** Replace `your-secure-password-here` and `your-ec2-public-ip` with your actual values!
+
+Save and exit (Ctrl+X, then Y, then Enter).
+
+## Step 6: Launch n8n
+
+This is the moment of truth:
+
+```bash
+docker-compose up -d
+```
+
+Check if it's running:
+
+```bash
+docker ps
+```
+
+You should see your n8n container running. 🎉
+
+## Step 7: Access Your n8n Instance
+
+Open your browser and navigate to:
+
+```
+http://your-ec2-public-ip:5678
+```
+
+You should see the n8n login screen. Use the credentials you set in the docker-compose file.
+
+
+
+Once you're in, you'll see the beautiful n8n interface ready for your first workflow!
+
+## Bonus: Setting Up HTTPS (Recommended)
+
+Running on HTTP is fine for testing, but you'll want HTTPS for production. Here's the quick version:
+
+1. **Get a domain name** and point it to your EC2 instance
+2. **Install Nginx** as a reverse proxy
+3. **Use Let's Encrypt** for free SSL certificates
+
+I'll save the detailed HTTPS setup for another post, but trust me - it's worth doing.
+
+## Keeping n8n Updated
+
+To update n8n to the latest version:
+
+```bash
+cd ~/n8n-docker
+docker-compose pull
+docker-compose up -d
+```
+
+Docker will pull the latest image and restart your container. Easy!
+
+## Troubleshooting Tips
+
+**Can't connect?** Check your security group settings in AWS. Port 5678 needs to be open.
+
+**Container keeps restarting?** Check the logs:
+```bash
+docker logs n8n-docker-n8n-1
+```
+
+**Out of memory?** Upgrade to a t2.small instance. The t2.micro can struggle with complex workflows.
+
+## What's Next?
+
+Now that you have n8n running, you can:
+- Connect to your favorite APIs
+- Build automation workflows
+- Set up webhooks
+- Create scheduled tasks
+- Integrate with databases
+
+
+The possibilities are endless. I've been using n8n to automate everything from social media posts to data backups, and it's been a game-changer.
+
+## Wrapping Up
+
+There you have it - your own n8n instance running on AWS EC2 with Docker. No monthly fees, full control, and all the automation power you need.
+
+Questions? Hit me up on Twitter or send me an email. Happy automating! 🚀
+
+---
+
+*Pro tip: Set up automated backups of your `~/.n8n` directory. Your future self will thank you.*

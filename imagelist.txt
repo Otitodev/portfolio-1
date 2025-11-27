@@ -1,0 +1,44 @@
+Missing Images List
+Profile/Avatar
+/me.png - Your profile photo
+Size: 256x256px (square)
+Location: public/me.png
+Usage: Hero section avatar
+Work Experience Logos (Company Logos)
+/vibesync.png - Phorion AI logo
+Size: 128x128px (square, will be displayed at 48x48px)
+Location: public/vibesync.png
+/techbridge.png - Techbridge logo
+Size: 128x128px (square, will be displayed at 48x48px)
+Location: public/techbridge.png
+/hammer-games.png - Hammer Games logo
+Size: 128x128px (square, will be displayed at 48x48px)
+Location: public/hammer-games.png
+/freelance.png - Freelance logo
+Size: 128x128px (square, will be displayed at 48x48px)
+Location: public/freelance.png
+Education Logo
+/unn.png - University of Nigeria, Enugu logo
+Size: 128x128px (square, will be displayed at 48x48px)
+Location: public/unn.png
+Blog Featured Images
+/blog/whatsapp-automation.png - WhatsApp automation blog header
+Size: 1200x630px (Open Graph standard)
+Location: public/blog/whatsapp-automation.png
+/blog/n8n-aws-featured.png - n8n AWS setup blog header
+Size: 1200x630px (Open Graph standard)
+Location: public/blog/n8n-aws-featured.png
+/blog/python-ai-backend.png - Python AI backend blog header
+Size: 1200x630px (Open Graph standard)
+Location: public/blog/python-ai-backend.png
+/blog/health-tech-africa.png - Health tech Africa blog header
+Size: 1200x630px (Open Graph standard)
+Location: public/blog/health-tech-africa.png
+Total: 10 images needed
+
+Summary:
+
+1 profile photo (256x256px)
+5 company/education logos (128x128px each)
+4 blog featured images (1200x630px each)
+All logos should be square and ideally PNG with transparent backgrounds. Blog featured images should be 1200x630px for optimal social media sharing (Open Graph).

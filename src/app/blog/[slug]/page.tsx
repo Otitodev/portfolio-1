@@ -4,6 +4,9 @@ import { formatDate } from "@/lib/utils";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft } from "lucide-react";
 
 export async function generateStaticParams() {
   const posts = await getBlogPosts();
@@ -88,6 +91,17 @@ export default async function Blog({
           }),
         }}
       />
+      
+      {/* Back to Blog Button */}
+      <div className="mb-8">
+        <Link href="/blog">
+          <Button variant="ghost" size="sm" className="gap-2">
+            <ArrowLeft className="h-4 w-4" />
+            Back to Blog
+          </Button>
+        </Link>
+      </div>
+
       <h1 className="title font-medium text-2xl tracking-tighter max-w-[650px]">
         {post.metadata.title}
       </h1>
