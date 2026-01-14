@@ -8,15 +8,21 @@ export const DATA = {
   location: "Lagos, Nigeria",
   locationLink: "https://www.google.com/maps/place/lagos",
   description:
-    "Backend Engineer | Python Developer. Building scalable systems with FastAPI, Django, and AWS.",
+    "Python Backend Engineer | AI Agents & Automation Specialist. Building production-ready AI voice agents and scalable automation systems.",
   summary:
-    "Backend Engineer skilled in building and maintaining scalable systems using Python, FastAPI, and Django. Experienced in API/System design, database management, and cloud deployment on AWS. Strong communicator with problem-solving, teamwork, and attention-to-detail skills. Passionate about using data and backend automation to improve connectivity and user experience.",
+    "Python Backend Engineer specializing in AI Agents development and automation systems. Expert in building production-ready AI voice agents using Vapi, with proven experience creating HIPAA-compliant healthcare solutions and multi-tenant automation platforms. Skilled in FastAPI, Django, n8n workflow automation, and integrating AI agents with CRM systems, calendars, and business workflows. Strong track record of delivering scalable backend systems that handle real-world operations autonomously, achieving measurable ROI through intelligent automation.",
   avatarUrl: "/me.png",
   skills: [
     "Python",
     "FastAPI",
     "Django",
     "Flask",
+    "AI Agents",
+    "Vapi",
+    "Voice AI",
+    "n8n Automation",
+    "Workflow Automation",
+    "LLM Integration",
     "PostgreSQL",
     "MySQL",
     "MongoDB",
@@ -25,8 +31,8 @@ export const DATA = {
     "Docker",
     "Kubernetes",
     "REST APIs",
-    "ETL",
-    "Apache Spark",
+    "CRM Integration",
+    "HIPAA Compliance",
     "Git",
   ],
   navbar: [
@@ -115,6 +121,89 @@ export const DATA = {
   ],
   projects: [
     {
+      title: "AddPost - AI-Powered Social Media Scheduler",
+      href: "https://addpost.site",
+      dates: "2025",
+      active: true,
+      description:
+        "Professional social media scheduling platform with AI-powered content generation for X (Twitter) and LinkedIn. Features AI caption generation, smart scheduling with timezone support, thread & carousel creation, PWA capabilities for offline use, secure authentication, and automated post execution with retry logic. Built with mobile-first approach and dark professional UI.",
+      technologies: [
+        "Next.js",
+        "FastAPI",
+        "TypeScript",
+        "Supabase",
+        "ShadCN/UI",
+        "PWA",
+        "AI Content Generation",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://addpost.site",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/addpost.gif",
+      video: "",
+    },
+    {
+      title: "Harmony Dental - AI Receptionist Voice Agent",
+      href: "#",
+      dates: "2025",
+      active: true,
+      description:
+        "HIPAA-compliant AI receptionist for Harmony Dental handling real patient workflows securely and autonomously. Features multi-step patient verification, secure appointment scheduling, prescription refills, lab results delivery, emergency detection, and automated reminders. Achieved 94% booking rate, 97% verification success, $2,400/month revenue recovery, 15 hours/week staff savings, 40% increase in new patient conversion, and 100% call answer rate with 24/7 availability. Live Demos: +1 (505) 356-8229 | +1 (507) 816-9529",
+      technologies: [
+        "Vapi",
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Google Calendar",
+        "Google Sheets",
+        "MCP Servers",
+        "HIPAA Compliance",
+        "Leapcell",
+      ],
+      links: [
+        {
+          type: "Demo 2",
+          href: "tel:+15078169529",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projetcs.jpg",
+      video: "",
+    },
+    {
+      title: "ClearFlow Plumbing - Emergency Triage & Scheduling Voice Agent",
+      href: "https://screenrec.com/share/gcdhpFflkS",
+      dates: "2024",
+      active: true,
+      description:
+        "AI receptionist for ClearFlow Plumbing handling emergency dispatch and service scheduling. Features real-time emergency classification (burst pipes, gas leaks, floods), automatic technician dispatch, dynamic pricing engine with upfront estimates, customer service history integration, and payment processing integration. Live Demo: +1 (702) 359-0236",
+      technologies: [
+        "Vapi",
+        "n8n",
+        "Google Sheets",
+        "Google Calendar",
+        "Payment Processing",
+      ],
+      links: [
+        {
+          type: "Demo",
+          href: "tel:+17023590236",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Video",
+          href: "https://screenrec.com/share/gcdhpFflkS",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/projetcs.jpg",
+      video: "",
+    },
+    {
       title: "Triage AI",
       href: "#",
       dates: "2024",
@@ -136,32 +225,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "",
-    },
-    {
-      title: "AutoLab",
-      href: "#",
-      dates: "2024",
-      active: true,
-      description:
-        "Built a Python ETL pipeline using Flask and PostgreSQL applying scikit-learn anomaly detection, boosting lab data accuracy by 25% and streamlining report processing. Optimized data throughput and backend performance for large-scale data operations.",
-      technologies: [
-        "Python",
-        "Flask",
-        "PostgreSQL",
-        "scikit-learn",
-        "ETL",
-        "Pandas",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/otitodev/autolab",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
+      image: "/triageai.png",
       video: "",
     },
   ],
