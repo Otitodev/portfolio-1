@@ -8,9 +8,9 @@ export const DATA = {
   location: "Lagos, Nigeria",
   locationLink: "https://www.google.com/maps/place/lagos",
   description:
-    "Python Backend Engineer | AI Agents & Automation Specialist. Building production-ready AI voice agents and scalable automation systems.",
+    "Backend engineer & problem solver. I build AI voice agents, scalable APIs, and full-stack products — I always figure it out.",
   summary:
-    "Python Backend Engineer specializing in AI Agents development and automation systems. Expert in building production-ready AI voice agents using Vapi, with proven experience creating HIPAA-compliant healthcare solutions and multi-tenant automation platforms. Skilled in FastAPI, Django, n8n workflow automation, and integrating AI agents with CRM systems, calendars, and business workflows. Strong track record of delivering scalable backend systems that handle real-world operations autonomously, achieving measurable ROI through intelligent automation.",
+    "Backend engineer who's genuinely good at figuring things out. I specialize in FastAPI and Python — clean APIs, real systems, production-ready code — and I'm comfortable in the frontend when a project needs it (Next.js).\n\nI've built AI voice agents that handle real workflows: a dental receptionist that recovered $2,400/month and answered 100% of calls, an emergency dispatch agent for a plumbing company, and a social media scheduler with AI content generation.\n\nI don't wait for perfect requirements. I ship, I iterate, and I make the thing actually work.\n\nOpen to freelance projects, contracts, and product engineering roles.",
   avatarUrl: "/me.png",
   skills: [
     "Python",
@@ -171,7 +171,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projetcs.jpg",
+      image: "/projects.jpg",
       video: "",
     },
     {
@@ -200,7 +200,7 @@ export const DATA = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/projetcs.jpg",
+      image: "",
       video: "",
     },
     {
