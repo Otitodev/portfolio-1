@@ -123,7 +123,7 @@ export const DATA = {
     {
       title: "Whaply - Multi-Tenant WhatsApp AI SaaS",
       href: "https://whaply.site",
-      dates: "2024 - Present",
+      dates: "2025 - Present",
       active: true,
       description:
         "Production multi-tenant WhatsApp AI platform where each tenant gets a fully configurable AI agent handling inbound messages autonomously. Features LLM-powered intent classification, conversation routing, human-AI collision detection, and per-tenant agent configuration. Built with FastAPI, LangGraph for agent orchestration, Supabase/PostgreSQL for persistence, and Evolution API for WhatsApp integration — deployed on Railway with GitHub Actions CI/CD. Reduced per-conversation LLM cost by ~40% through Redis-backed intent caching and token budget enforcement.",
