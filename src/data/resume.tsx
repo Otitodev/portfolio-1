@@ -8,9 +8,9 @@ export const DATA = {
   location: "Enugu, Nigeria",
   locationLink: "https://www.google.com/maps/place/enugu",
   description:
-    "I build AI agents that ship — not demos. Python backend engineer specialising in production LLM systems, voice AI, and multi-tenant automation platforms.",
+    "Python backend engineer specialising in AI agents, voice AI, and automation.",
   summary:
-    "My work runs in production right now: a HIPAA-compliant voice receptionist with a 94% autonomous booking rate, an emergency triage agent handling 100% of inbound service calls, and a multi-tenant WhatsApp AI SaaS currently in beta.\n\nI came into engineering from healthcare a BSc in Medical Laboratory Science which is why I tend to gravitate toward AI problems that touch real-world workflows and compliance, not just chatbots. Comfortable across the stack (FastAPI, LangGraph, Vapi, Next.js, Postgres), but I'm strongest when the system has to actually work for non-technical users on day one.",
+    "I build AI systems that actually run in production.\n\nRight now I have a voice AI answering patient calls for a dental practice, booking appointments autonomously 94% of the time. Another one handling emergency dispatch for a plumbing company. And a WhatsApp AI platform where multiple businesses each get their own AI agent.\n\nI also built an MCP server — a way to wire Claude directly into external business systems so it can query live data instead of working from copy-pasted text.\n\nI came into this from healthcare — BSc in Medical Laboratory Science — which is probably why I keep ending up on projects where the AI has to work for real people, not just look good in a demo.\n\nDay to day I'm deep in Claude, LangGraph, n8n, and Vapi.",
   avatarUrl: "/me.png",
   skills: [
     "Python",
