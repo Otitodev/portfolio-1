@@ -159,6 +159,64 @@ export const DATA = {
       video: "",
     },
     {
+      title: "Bridgepoint Weekly Ops Report — n8n + Claude Automation",
+      href: "https://github.com/Otitodev/bridgepoint-portfolio",
+      dates: "2026",
+      active: true,
+      description:
+        "Automated weekly property management reporting pipeline for a fictional commercial real estate brokerage. n8n workflow pulls maintenance tickets, tenant satisfaction scores, and lease expiry data from three Google Sheets every Friday at 7AM, Claude generates a formatted leadership summary flagging urgent tickets, low satisfaction scores, and uncontacted lease renewals, then delivers it to Slack before the team's day starts. Replaced 2 hours of manual weekly work. Built as a portfolio piece demonstrating production-grade workflow automation with LLM-generated reporting.",
+      technologies: [
+        "n8n",
+        "Claude API",
+        "Google Sheets",
+        "Slack",
+        "Reporting Automation",
+        "Workflow Automation",
+      ],
+      links: [
+        {
+          type: "Write-up",
+          href: "/blog/bridgepoint-weekly-ops-report-n8n-claude",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Otitodev/bridgepoint-portfolio",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/bridgepoint-ops-report.png",
+      video: "",
+    },
+    {
+      title: "Bridgepoint Leasing Assistant — Claude Project",
+      href: "https://github.com/Otitodev/bridgepoint-portfolio",
+      dates: "2026",
+      active: true,
+      description:
+        "Department-specific Claude Project built for a fictional commercial real estate brokerage's leasing team. Custom system instructions enforce brand voice and structural rules; the knowledge base ships property portfolio, communication standards, and standard lease terms; pre-built artifact templates handle tenant outreach emails, inspection report summaries, and offer comparisons. Reduced a 45-minute manual task to under 3 minutes. Built as a portfolio piece demonstrating Claude Projects, prompt engineering, and domain-specific workflow design.",
+      technologies: [
+        "Claude Projects",
+        "Prompt Engineering",
+        "Real Estate",
+        "Workflow Automation",
+      ],
+      links: [
+        {
+          type: "Write-up",
+          href: "/blog/bridgepoint-leasing-assistant-claude-project",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Otitodev/bridgepoint-portfolio",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/bridgepoint-leasing.png",
+      video: "",
+    },
+    {
       title: "LabLens MCP — Medical Lab Intelligence Server",
       href: "https://github.com/Otitodev/lablens",
       dates: "2024",
