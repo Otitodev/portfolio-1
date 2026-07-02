@@ -54,7 +54,7 @@ export default function ContactPage() {
           <div>
             <span className="text-muted-foreground">LinkedIn: </span>
             <Link
-              href="https://linkedin.com/in/otito-ogene"
+              href="https://www.linkedin.com/in/otito-ogene-315122201"
               target="_blank"
               rel="noopener noreferrer"
               className="underline underline-offset-4 hover:text-foreground"
