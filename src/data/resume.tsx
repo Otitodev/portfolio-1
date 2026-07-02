@@ -61,7 +61,7 @@ export const DATA = {
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://linkedin.com/in/otito-ogene",
+        url: "https://www.linkedin.com/in/otito-ogene-315122201",
         icon: Icons.linkedin,
         navbar: true,
       },
@@ -108,7 +108,7 @@ export const DATA = {
     },
     {
       company: "Freelance",
-      href: "#",
+      href: "https://github.com/Otitodev",
       badges: [],
       location: "Remote",
       title: "Software Engineer",
