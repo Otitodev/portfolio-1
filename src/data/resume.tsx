@@ -161,6 +161,35 @@ export const DATA = {
       video: "",
     },
     {
+      title: "ClaimGuard — AI Denial Management for Medical Practices",
+      href: "https://claimguard-alpha.vercel.app/",
+      dates: "2026",
+      active: true,
+      description:
+        "Production SaaS that automates insurance denial processing for small medical practices. Forward an EOB or denial PDF and a LangGraph pipeline (parse → classify → draft → critique) extracts patient/payer/codes, recommends appeal/resubmit/write-off, and drafts a professional appeal letter with a rich text editor for review. Ships with deadline + response tracking, a Needs-Action queue with aging indicators, and denial analytics by payer. Built on FastAPI + LangGraph + Claude, Next.js 16 frontend, AWS Aurora Serverless v2 + EC2 (Caddy + uvicorn), Vercel frontend, and the whole AWS stack defined in Terraform.",
+      technologies: [
+        "FastAPI",
+        "LangGraph",
+        "Claude API",
+        "Next.js 16",
+        "AWS Aurora",
+        "AWS EC2",
+        "Terraform",
+        "Better Auth",
+        "AgentMail",
+        "PostgreSQL",
+      ],
+      links: [
+        {
+          type: "Website",
+          href: "https://claimguard-alpha.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/claimguard.png",
+      video: "",
+    },
+    {
       title: "Bridgepoint Weekly Ops Report — n8n + Claude Automation",
       href: "https://github.com/Otitodev/bridgepoint-portfolio",
       dates: "2026",

@@ -19,14 +19,15 @@ type Service = {
 
 const services: Service[] = [
   {
-    name: "AI Voice Agents",
+    name: "AI Agent Development",
     summary:
-      "Production voice AI that answers calls, books appointments, dispatches jobs, and hands off to a human when it should. Built on Vapi with custom LangGraph orchestration.",
+      "Production AI agents that actually run in production — voice, chat, and workflow. From Vapi receptionists that book appointments and dispatch jobs, to WhatsApp / web-chat agents with per-tenant configuration, to multi-step LangGraph workflows that hand off to humans when they should.",
     includes: [
-      "Discovery, call-flow design, and prompt engineering",
-      "Voice agent build (Vapi, LangGraph, tool calls)",
-      "Calendar, CRM, and telephony integrations",
-      "Deployment, monitoring, and 30 days of post-launch support",
+      "Discovery, agent design, and prompt engineering",
+      "Voice agent build (Vapi, LangGraph, tool calls, telephony)",
+      "Chat agent build (WhatsApp, web widget, Slack, custom)",
+      "Multi-agent orchestration and tool integrations (calendar, CRM, custom APIs)",
+      "Deployment, evaluation, monitoring, and 30 days of post-launch support",
     ],
     startingFrom: "$2,500 USD",
     timeline: "3–5 weeks",

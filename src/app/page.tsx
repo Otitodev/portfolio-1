@@ -127,7 +127,7 @@ export default function Page() {
           <BlurFade delay={BLUR_FADE_DELAY * 7}>
             <div className="flex flex-wrap justify-center gap-2 max-w-[600px] mx-auto">
               {[
-                "AI Voice Agents",
+                "AI Agent Development",
                 "Backend Engineering",
                 "Automation Systems",
                 "AI Integrations & MCP Servers",
