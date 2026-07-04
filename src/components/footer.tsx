@@ -5,7 +5,14 @@ export default function Footer() {
 
   return (
     <footer className="mt-20 mb-20 flex flex-col items-center gap-2 text-xs text-muted-foreground">
-      <div className="flex items-center gap-3">
+      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1">
+        <Link
+          href="/services"
+          className="hover:text-foreground transition-colors"
+        >
+          Services
+        </Link>
+        <span aria-hidden>·</span>
         <Link
           href="/contact"
           className="hover:text-foreground transition-colors"
@@ -25,6 +32,13 @@ export default function Footer() {
           className="hover:text-foreground transition-colors"
         >
           Terms
+        </Link>
+        <span aria-hidden>·</span>
+        <Link
+          href="/refund"
+          className="hover:text-foreground transition-colors"
+        >
+          Refund
         </Link>
       </div>
       <p>© {year} Otito Ogene</p>

@@ -36,6 +36,22 @@ export default function Page() {
               </Avatar>
             </BlurFade>
           </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 2}>
+            <div className="flex flex-wrap gap-3">
+              <Link
+                href="/services"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-5 py-2 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              >
+                Services
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-md border px-5 py-2 text-sm font-medium transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              >
+                Contact
+              </Link>
+            </div>
+          </BlurFade>
         </div>
       </section>
       <section id="about">
@@ -87,6 +103,58 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+      <section id="work-with-me">
+        <div className="space-y-6 w-full py-6">
+          <BlurFade delay={BLUR_FADE_DELAY * 6}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Work With Me
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  Services I offer
+                </h2>
+                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed max-w-[600px] mx-auto">
+                  I work with founders and product teams on AI systems that run
+                  in production. Every engagement is quoted in a written
+                  proposal after a discovery call.
+                </p>
+              </div>
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 7}>
+            <div className="flex flex-wrap justify-center gap-2 max-w-[600px] mx-auto">
+              {[
+                "AI Voice Agents",
+                "Backend Engineering",
+                "Automation Systems",
+                "AI Integrations & MCP Servers",
+                "Consulting & Technical Audit",
+              ].map((label) => (
+                <Badge key={label} variant="secondary">
+                  {label}
+                </Badge>
+              ))}
+            </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 8}>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link
+                href="/services"
+                className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-2.5 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              >
+                See services &amp; pricing
+              </Link>
+              <Link
+                href="/contact"
+                className="inline-flex items-center justify-center rounded-md border px-6 py-2.5 text-sm font-medium transition-colors hover:bg-accent focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+              >
+                Start a project
+              </Link>
+            </div>
+          </BlurFade>
         </div>
       </section>
       <section id="work">
