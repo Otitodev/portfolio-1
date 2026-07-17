@@ -9,6 +9,8 @@ export const DATA = {
   locationLink: "https://www.google.com/maps/place/enugu",
   description:
     "Python backend engineer specialising in AI agents, voice AI, and automation.",
+  tagline: "Python backend engineer specialising in",
+  specialties: ["AI agents", "voice AI", "automation systems", "MCP servers"],
   summary:
     "I build AI systems that actually run in production.\n\nRight now I have a voice AI answering patient calls for a dental practice, booking appointments autonomously 94% of the time. Another one handling emergency dispatch for a plumbing company. And a WhatsApp AI platform where multiple businesses each get their own AI agent.\n\nI also built an MCP server that lets Claude interpret medical lab data — pulling live results from Epic's FHIR sandbox, flagging critical values, and generating clinical summaries.\n\nI came into this from healthcare — BSc in Medical Laboratory Science — which is probably why I keep ending up on projects where the AI has to work for real people, not just look good in a demo.\n\nDay to day I'm deep in Claude, LangGraph, n8n, and Vapi.",
   avatarUrl: "/me.png",
@@ -187,6 +189,34 @@ export const DATA = {
         },
       ],
       image: "/claimguard.png",
+      video: "",
+    },
+    {
+      title: "AI Content Engine with Human-in-the-Loop Approval — Fencing Contractor",
+      href: "/blog/fencing-content-engine-zapier",
+      dates: "2026",
+      active: true,
+      description:
+        "Autonomous SEO content system running in production for a US fencing contractor. A weekly research cycle pulls Google Search Console performance data and SEMrush keyword mappings into Zapier Tables, then a Zapier Agent drafts a blog post every weekday and saves it as a WordPress draft. Built as two Zaps connected by a webhook: the drafter produces each post and emails the client an approval card — title, snippet, SEO rationale, and Approve/Reject buttons — while the publisher catches the client's decision and either publishes the post or triggers a redraft. A second pipeline turns tagged CompanyCam job photos into Facebook posts, Pinterest pins, and photo-backed blog drafts through the same approval flow. The business publishes daily without the owner ever logging into a CMS.",
+      technologies: [
+        "Zapier",
+        "Zapier Agents",
+        "WordPress",
+        "Google Search Console",
+        "SEMrush",
+        "CompanyCam",
+        "Zapier Tables",
+        "Webhooks",
+        "Gmail",
+      ],
+      links: [
+        {
+          type: "Write-up",
+          href: "/blog/fencing-content-engine-zapier",
+          icon: <Icons.globe className="size-3" />,
+        },
+      ],
+      image: "/blog/fencing-content-engine/approval-email-close.png",
       video: "",
     },
     {

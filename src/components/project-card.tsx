@@ -1,4 +1,5 @@
 import { Badge } from "@/components/ui/badge";
+import { BorderBeam } from "@/components/magicui/border-beam";
 import {
   Card,
   CardContent,
@@ -43,7 +44,7 @@ export function ProjectCard({
   return (
     <Card
       className={
-        "flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
+        "group relative flex flex-col overflow-hidden border hover:shadow-lg transition-all duration-300 ease-out h-full"
       }
     >
       <Link
@@ -113,6 +114,7 @@ export function ProjectCard({
           </div>
         )}
       </CardFooter>
+      <BorderBeam className="opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
     </Card>
   );
 }

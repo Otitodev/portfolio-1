@@ -1,5 +1,7 @@
 import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
+import { DotPattern } from "@/components/magicui/dot-pattern";
+import { ScrollProgress } from "@/components/magicui/scroll-progress";
 import { ThemeProvider } from "@/components/theme-provider";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { DATA } from "@/data/resume";
@@ -65,6 +67,8 @@ export default function RootLayout({
       >
         <ThemeProvider attribute="class" defaultTheme="light">
           <TooltipProvider delayDuration={0}>
+            <DotPattern className="fixed inset-0 -z-10 [mask-image:radial-gradient(ellipse_at_center,black_30%,transparent_75%)]" />
+            <ScrollProgress />
             {children}
             <Footer />
             <Navbar />
