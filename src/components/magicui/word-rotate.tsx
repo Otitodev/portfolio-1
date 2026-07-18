@@ -1,7 +1,7 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface WordRotateProps {
@@ -16,29 +16,45 @@ export default function WordRotate({
   className,
 }: WordRotateProps) {
   const [index, setIndex] = useState(0);
+  const prevIndex = useRef(words.length - 1);
 
   useEffect(() => {
     const interval = setInterval(
-      () => setIndex((prev) => (prev + 1) % words.length),
+      () =>
+        setIndex((prev) => {
+          prevIndex.current = prev;
+          return (prev + 1) % words.length;
+        }),
       duration
     );
     return () => clearInterval(interval);
   }, [words, duration]);
 
+  // All words are stacked in the same grid cell, so the container is
+  // always as wide as the widest word — the line never reflows.
   return (
-    <span className="inline-flex overflow-hidden align-bottom">
-      <AnimatePresence mode="wait">
+    <span className="inline-grid overflow-hidden align-bottom">
+      {words.map((word, i) => (
         <motion.span
-          key={words[index]}
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: 20 }}
+          key={word}
+          className={cn(
+            "col-start-1 row-start-1 inline-block whitespace-nowrap",
+            className
+          )}
+          initial={false}
+          animate={
+            i === index
+              ? { opacity: 1, y: 0 }
+              : i === prevIndex.current
+                ? { opacity: 0, y: 20 }
+                : { opacity: 0, y: -20 }
+          }
           transition={{ duration: 0.25, ease: "easeOut" }}
-          className={cn("inline-block", className)}
+          aria-hidden={i !== index}
         >
-          {words[index]}
+          {word}
         </motion.span>
-      </AnimatePresence>
+      ))}
     </span>
   );
 }

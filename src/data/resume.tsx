@@ -12,7 +12,7 @@ export const DATA = {
   tagline: "Python backend engineer specializing in",
   specialties: ["AI agents", "voice AI", "automation systems", "MCP servers"],
   summary:
-    "I build AI systems that actually run in production.\n\nRight now I have a voice AI answering patient calls for a dental practice, booking appointments autonomously 94% of the time. Another one handling emergency dispatch for a plumbing company. And a WhatsApp AI platform where multiple businesses each get their own AI agent.\n\nI also built an MCP server that lets Claude interpret medical lab data — pulling live results from Epic's FHIR sandbox, flagging critical values, and generating clinical summaries.\n\nI came into this from healthcare — BSc in Medical Laboratory Science — which is probably why I keep ending up on projects where the AI has to work for real people, not just look good in a demo.\n\nDay to day I'm deep in Claude, LangGraph, n8n, and Vapi.",
+    "I build AI systems that actually run in production.\n\nRight now I have a voice AI answering patient calls for a dental practice, booking appointments autonomously 94% of the time. Another one handling emergency dispatch for a plumbing company. And a WhatsApp AI platform where multiple businesses each get their own AI agent.\n\nI also built an MCP server that lets Claude interpret medical lab data, pulling live results from Epic's FHIR sandbox, flagging critical values, and generating clinical summaries.\n\nI came into this from healthcare (BSc in Medical Laboratory Science), which is probably why I keep ending up on projects where the AI has to work for real people, not just look good in a demo.\n\nDay to day I'm deep in Claude, LangGraph, n8n, and Vapi.",
   avatarUrl: "/me.png",
   skills: [
     "Python",
