@@ -238,12 +238,12 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Send me an email or shoot me a dm{" "}
+                Want to chat? Send me an email or connect with me on{" "}
                 <Link
-                  href={DATA.contact.social.X.url}
+                  href={DATA.contact.social.LinkedIn.url}
                   className="text-blue-500 hover:underline"
                 >
-                  with a direct question on twitter
+                  LinkedIn
                 </Link>{" "}
                 and I&apos;ll respond whenever I can.
               </p>

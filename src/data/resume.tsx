@@ -8,8 +8,8 @@ export const DATA = {
   location: "Enugu, Nigeria",
   locationLink: "https://www.google.com/maps/place/enugu",
   description:
-    "Python backend engineer specialising in AI agents, voice AI, and automation.",
-  tagline: "Python backend engineer specialising in",
+    "Python backend engineer specializing in AI agents, voice AI, and automation.",
+  tagline: "Python backend engineer specializing in",
   specialties: ["AI agents", "voice AI", "automation systems", "MCP servers"],
   summary:
     "I build AI systems that actually run in production.\n\nRight now I have a voice AI answering patient calls for a dental practice, booking appointments autonomously 94% of the time. Another one handling emergency dispatch for a plumbing company. And a WhatsApp AI platform where multiple businesses each get their own AI agent.\n\nI also built an MCP server that lets Claude interpret medical lab data — pulling live results from Epic's FHIR sandbox, flagging critical values, and generating clinical summaries.\n\nI came into this from healthcare — BSc in Medical Laboratory Science — which is probably why I keep ending up on projects where the AI has to work for real people, not just look good in a demo.\n\nDay to day I'm deep in Claude, LangGraph, n8n, and Vapi.",
@@ -69,12 +69,6 @@ export const DATA = {
         icon: Icons.linkedin,
         navbar: true,
       },
-      X: {
-        name: "X",
-        url: "https://x.com/Paynell1", // Update with your actual X/Twitter handle
-        icon: Icons.x,
-        navbar: true,
-      },
       email: {
         name: "Send Email",
         url: "mailto:otitodrichukwu@gmail.com",
@@ -109,18 +103,6 @@ export const DATA = {
       end: "Oct 2024",
       description:
         "Built RESTful APIs in FastAPI/Django for authentication, in-game events, and analytics. Implemented Redis caching and async programming, reducing response time by 35%. Optimized backend systems handling 50K+ daily active users with robust testing practices.",
-    },
-    {
-      company: "Freelance",
-      href: "https://github.com/Otitodev",
-      badges: [],
-      location: "Remote",
-      title: "Software Engineer",
-      logoUrl: "/freelance.png",
-      start: "Nov 2023",
-      end: "Present",
-      description:
-        "Designed and shipped AI-powered systems for clients across healthcare, home services, and SaaS — including a HIPAA-compliant voice AI receptionist (94% autonomous booking rate), a live emergency triage agent, and a multi-tenant WhatsApp AI platform. Full stack across FastAPI, LangGraph, Claude API, Vapi, n8n, and Supabase.",
     },
   ],
   education: [
