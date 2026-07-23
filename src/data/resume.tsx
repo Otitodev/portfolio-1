@@ -4,7 +4,7 @@ import { BriefcaseIcon, HomeIcon, MailIcon, NotebookIcon } from "lucide-react";
 export const DATA = {
   name: "Otito Ogene",
   initials: "OO",
-  url: "https://github.com/otitodev", // Update with your portfolio website if you have one
+  url: "https://otito.site",
   location: "Enugu, Nigeria",
   locationLink: "https://www.google.com/maps/place/enugu",
   description:

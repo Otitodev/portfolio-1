@@ -1,0 +1,44 @@
+# Otito Ogene — Portfolio
+
+> Python backend engineer specializing in AI agents, voice AI, and automation.
+
+## Site
+
+This is a Next.js 14 static portfolio site for Otito Ogene, deployed at https://otito.site.
+
+- **Name:** Otito Ogene
+- **Location:** Enugu, Nigeria
+- **GitHub:** https://github.com/otitodev
+- **Stack:** Python, FastAPI, TypeScript, Next.js, LangGraph, Claude API, Vapi, n8n
+
+## Pages
+
+- `/` — Home page with bio, skills, work experience, projects, and education.
+- `/blog` — Blog listing page with summaries of all posts.
+- `/blog/[slug]` — Individual blog post (MDX content).
+- `/services` — Services offered (AI agents, voice AI, automation, MCP servers).
+- `/contact` — Contact page with social links.
+
+## Blog Posts
+
+- [How Nigerian Businesses Can Automate Their Operations Using WhatsApp, n8n, and AI](/blog/whatsapp-automation-nigerian-businesses) — 2025-06-12
+- [Building AI Voice Agents with n8n and CRM Integration: A Technical Guide](/blog/building-ai-voice-agents-n8n-crm-integration) — 2025-06-10
+- [Setting Up n8n on AWS EC2: A Production-Ready Guide](/blog/setting-up-n8n-on-aws-ec2) — 2025-06-12
+- [BridgePoint Weekly Operations Report: Automating Lead and Rental Tracking with n8n and Claude](/blog/bridgepoint-weekly-ops-report-n8n-claude) — 2025-07-01
+- [BridgePoint Leasing Assistant: Building a Claude-Powered AI for Equipment Management](/blog/bridgepoint-leasing-assistant-claude-project) — 2025-07-01
+- [Building Scalable Python Backends for AI Agents: Best Practices and Patterns](/blog/scalable-python-backends-ai-agents) — 2025-07-05
+- [How I Built a Content Engine for a Fencing Company Using Zapier and Claude](/blog/fencing-content-engine-zapier) — 2025-07-03
+- [Digital Health Triage: AI-Powered Patient Assessment for African Healthcare](/blog/digital-health-ai-triage-africa) — 2025-07-04
+
+## Projects
+
+- **ClaimGuard** — AI-driven health insurance claims processing system.
+- **TriageAI** — Voice AI for patient intake and appointment booking (dental practices).
+- **Whaply** — WhatsApp AI platform for multi-business AI agents.
+- **Callahan Pipe & Drain MCP** — MCP server for emergency dispatch AI.
+- **BridgePoint Leasing Assistant** — Claude-powered equipment leasing assistant.
+- **BridgePoint Weekly Ops Report** — Automated reporting with n8n and Claude.
+
+## Content Source
+
+All site content is defined in `src/data/resume.tsx` (the DATA object). Blog posts live in `/content/` as MDX files.
